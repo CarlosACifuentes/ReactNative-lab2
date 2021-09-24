@@ -3,10 +3,30 @@ import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 export default function HelloWorldApp () {
   return (
-    <View></View>
+    <View>
+      <TextInput />
+      <Text></Text>
+    </View>
   );
 }
 
+const styles = StyleSheet.create (
+  {
+    container:{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding:100,
+    },
+    edit:{
+      borderColor: 'black',
+      borderWidth:1,
+      width:'90%',
+    },
+    text:{}
+  }
+
+)
 
 
 
