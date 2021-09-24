@@ -1,6 +1,17 @@
 import React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
+export default function HelloWorldApp () {
+  return (
+    <View></View>
+  );
+}
+
+
+
+
+
+/*
 export default function HelloWorldApp() {
 
 const [value, onChangeText] = React.useState('e.g. Pepito Perez');
@@ -55,3 +66,4 @@ const styles = StyleSheet.create({
   text:{}
   }
 );
+*/
