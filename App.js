@@ -4,13 +4,17 @@ import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 export default function HelloWorldApp () {
 
-  const [value, onChangeText] = React.useState('Placeholder');
+  const [value, onChangeText] = React.useState('Placeholder text');
 
   return (
     <View style = {styles.container} >
       <TextInput style = {styles.edit} 
         onChangeText = {text=>onChangeText(text)}
-        value = {value}
+        value = {value} clearTextOnFocus = 'true'
+      />
+      <TextInput style = {styles.edit} 
+        
+        value = {'text'} clearTextOnFocus = 'true'
       />
       <Text style = {styles.text}>{value}</Text>
     </View>
