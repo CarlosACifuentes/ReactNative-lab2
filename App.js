@@ -24,7 +24,7 @@ const styles = StyleSheet.create (
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      padding:150,
+      padding:100,
     },
     edit:{
       borderColor: 'black',
