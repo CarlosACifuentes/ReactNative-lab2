@@ -1,11 +1,18 @@
+import { assertVariableDeclaration } from "@babel/types";
 import React from "react";
 import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
 export default function HelloWorldApp () {
+
+  const [value, onChangeText] = React.useState('Placeholder');
+
   return (
-    <View>
-      <TextInput />
-      <Text></Text>
+    <View style = {styles.container} >
+      <TextInput style = {styles.edit} 
+        onChangeText = {text=>onChangeText(text)}
+        value = {value}
+      />
+      <Text style = {styles.text}>{value}</Text>
     </View>
   );
 }
@@ -21,9 +28,15 @@ const styles = StyleSheet.create (
     edit:{
       borderColor: 'black',
       borderWidth:1,
+      padding:10,
       width:'90%',
     },
-    text:{}
+    text:{
+      padding:5,
+      color:'#0b6396',
+      fontSize: 20,
+      
+    }
   }
 
 )
